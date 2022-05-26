@@ -6,7 +6,7 @@
 
 ### 1) Отображение изображения по каналам RGB
 
-Ниже приведен фрагмент кода, осуществляющий отображение изображения по каналам RGB:
+Ниже приведен алгоритм отображение изображения по каналам RGB:
 ```
 public void channels(BufferedImage img) throws IOException {
         int h = img.getHeight();
@@ -40,7 +40,7 @@ public void channels(BufferedImage img) throws IOException {
 
 ### 2) Лианеризация изображения обратным гамма преобразованием.
 
-Ниже приведен фрагмент кода, осуществляющий лианеризацию изображения обратным гамма преобразованием:
+Ниже приведен алгоритм лианеризации изображения обратным гамма преобразованием:
 ```
 public BufferedImage gammaCorrection(BufferedImage img, double gamma) throws IOException {
     int h = img.getHeight();
@@ -69,7 +69,7 @@ public BufferedImage gammaCorrection(BufferedImage img, double gamma) throws IOE
 
 ### 3) Отображение по каналам RGB.
 
-Ниже приведен фрагмент кода, осуществляющий отображение по каналам RGB:
+Ниже приведен алгоритм отображения по каналам RGB:
 ```
 public void rgbChannels(BufferedImage img) throws IOException {
     int h = img.getHeight();
@@ -103,7 +103,7 @@ public void rgbChannels(BufferedImage img) throws IOException {
 
 ### 4) Отображение поканальной разницы между исходным изображением и линеаризованным
 
-Ниже приведен фрагмент кода, осуществляющий отображение поканальной разницы между исходным изображением и линеаризованным:
+Ниже приведен алгоритм отображения поканальной разницы между исходным изображением и линеаризованным:
 ```
 public void difference(BufferedImage img, BufferedImage gCor) throws IOException {
     int h = img.getHeight();
