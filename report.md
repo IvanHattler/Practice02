@@ -11,27 +11,27 @@
 Ниже приведен фрагмент кода, осуществляющий отображение изображения по каналам RGB:
 ```
 public void channels(BufferedImage img) throws IOException {
-    int h = img.getHeight();
-    int w = img.getWidth();
-    BufferedImage chR = new BufferedImage(w, h, TYPE_INT_RGB);
-    BufferedImage chG = new BufferedImage(w, h, TYPE_INT_RGB);
-    BufferedImage chB = new BufferedImage(w, h, TYPE_INT_RGB);
-    for (int y = 0; y < h; y++) {
-        for (int x = 0; x < w; x++) {
-            int rgb = img.getRGB(x, y);
-            int red = red(rgb);
-            int green = green(rgb);
-            int blue = blue(rgb);
-            chR.setRGB(x, y, rgb(red, red, red));
-            chG.setRGB(x, y, rgb(green, green, green));
-            chB.setRGB(x, y, rgb(blue, blue, blue));
+        int h = img.getHeight();
+        int w = img.getWidth();
+        BufferedImage chR = new BufferedImage(w, h, TYPE_INT_RGB);
+        BufferedImage chG = new BufferedImage(w, h, TYPE_INT_RGB);
+        BufferedImage chB = new BufferedImage(w, h, TYPE_INT_RGB);
+        for (int y = 0; y < h; y++) {
+            for (int x = 0; x < w; x++) {
+                int rgb = img.getRGB(x, y);
+                int red = Utils.red(rgb);
+                int green = Utils.green(rgb);
+                int blue = Utils.blue(rgb);
+                chR.setRGB(x, y, Utils.rgb(red, red, red));
+                chG.setRGB(x, y, Utils.rgb(green, green, green));
+                chB.setRGB(x, y, Utils.rgb(blue, blue, blue));
+            }
         }
+        Utils.save(chR, "result/channels", "r", "jpg");
+        Utils.save(chG, "result/channels", "g", "jpg");
+        Utils.save(chB, "result/channels", "b", "jpg");
     }
-    save(chR, "result/channels", "r", FORMAT);
-    save(chG, "result/channels", "g", FORMAT);
-    save(chB, "result/channels", "b", FORMAT);
-}
-```
+   ```
 Результаты работы: 
 
 [/result/channels/r.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/channels/r.jpg)
@@ -70,13 +70,13 @@ public BufferedImage gammaCorrection(BufferedImage img, double gamma) throws IOE
     for (int y = 0; y < h; y++) {
         for (int x = 0; x < w; x++) {
             int rgb = img.getRGB(x, y);
-            int red = gammaLUT[red(rgb)];
-            int green = gammaLUT[green(rgb)];
-            int blue = gammaLUT[blue(rgb)];
-            result.setRGB(x, y, rgb(red, green, blue));
+            int red = gammaLUT[Utils.red(rgb)];
+            int green = gammaLUT[Utils.green(rgb)];
+            int blue = gammaLUT[Utils.blue(rgb)];
+            result.setRGB(x, y, Utils.rgb(red, green, blue));
         }
     }
-    save(result, "result/gammaCor", "result", FORMAT);
+    Utils.save(result, "result/gammaCor", "result", "jpg");
     return result;
 }
 ```
@@ -102,17 +102,17 @@ public void rgbChannels(BufferedImage img) throws IOException {
     for (int y = 0; y < h; y++) {
         for (int x = 0; x < w; x++) {
             int rgb = img.getRGB(x, y);
-            int red = red(rgb);
-            int green = green(rgb);
-            int blue = blue(rgb);
-            chR.setRGB(x, y, rgb(red, 0, 0));
-            chG.setRGB(x, y, rgb(0, green, 0));
-            chB.setRGB(x, y, rgb(0, 0, blue));
+            int red = Utils.red(rgb);
+            int green = Utils.green(rgb);
+            int blue = Utils.blue(rgb);
+            chR.setRGB(x, y, Utils.rgb(red, 0, 0));
+            chG.setRGB(x, y, Utils.rgb(0, green, 0));
+            chB.setRGB(x, y, Utils.rgb(0, 0, blue));
         }
     }
-    save(chR, "result/rgbChannels", "r", FORMAT);
-    save(chG, "result/rgbChannels", "g", FORMAT);
-    save(chB, "result/rgbChannels", "b", FORMAT);
+    Utils.save(chR, "result/rgbChannels", "r", "jpg");
+    Utils.save(chG, "result/rgbChannels", "g", "jpg");
+    Utils.save(chB, "result/rgbChannels", "b", "jpg");
 }
 ```
 Результаты работы: 
@@ -142,7 +142,7 @@ public void rgbChannels(BufferedImage img) throws IOException {
 
 Ниже приведен фрагмент кода, осуществляющий отображение поканальной разницы между исходным изображением и линеаризованным:
 ```
-private void difference(BufferedImage img, BufferedImage gCor) throws IOException {
+public void difference(BufferedImage img, BufferedImage gCor) throws IOException {
     int h = img.getHeight();
     int w = img.getWidth();
     BufferedImage chR = new BufferedImage(w, h, TYPE_INT_RGB);
@@ -152,17 +152,17 @@ private void difference(BufferedImage img, BufferedImage gCor) throws IOExceptio
         for (int x = 0; x < w; x++) {
             int orig = img.getRGB(x, y);
             int corr = gCor.getRGB(x, y);
-            int red = red(orig) - red(corr);
-            int green = green(orig) - green(corr);
-            int blue = blue(orig) - blue(corr);
-            chR.setRGB(x, y, rgb(red, 0, 0));
-            chG.setRGB(x, y, rgb(0, green, 0));
-            chB.setRGB(x, y, rgb(0, 0, blue));
+            int red = Utils.red(orig) - Utils.red(corr);
+            int green = Utils.green(orig) - Utils.green(corr);
+            int blue = Utils.blue(orig) - Utils.blue(corr);
+            chR.setRGB(x, y, Utils.rgb(red, 0, 0));
+            chG.setRGB(x, y, Utils.rgb(0, green, 0));
+            chB.setRGB(x, y, Utils.rgb(0, 0, blue));
         }
     }
-    save(chR, "result/difference", "r", FORMAT);
-    save(chG, "result/difference", "g", FORMAT);
-    save(chB, "result/difference", "b", FORMAT);
+    Utils.save(chR, "result/difference", "r", "jpg");
+    Utils.save(chG, "result/difference", "g", "jpg");
+    Utils.save(chB, "result/difference", "b", "jpg");
 }
 ```
 Результаты работы: 
