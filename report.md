@@ -1,12 +1,10 @@
 ## Лабораторная работа 2.
 
-В ходе выполнения рабораторной работы было разработано консольное Java приложение.
-
 Исходное изображение - [img.jpg](https://github.com/IvanHattler/Practice02/blob/master/src/main/resources/img.jpg)
 
 Результаты обработки - [result](https://github.com/IvanHattler/Practice02/tree/master/result)
 
-### Отображение изображения по каналам RGB
+### 1) Отображение изображения по каналам RGB
 
 Ниже приведен фрагмент кода, осуществляющий отображение изображения по каналам RGB:
 ```
@@ -36,11 +34,11 @@ public void channels(BufferedImage img) throws IOException {
 
 [/result/channels/r.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/channels/r.jpg)
 
-[/result/channels/r.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/channels/g.jpg)
+[/result/channels/g.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/channels/g.jpg)
 
 [/result/channels/b.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/channels/b.jpg)
 
-### Лианеризация изображения обратным гамма преобразованием.
+### 2) Лианеризация изображения обратным гамма преобразованием.
 
 Ниже приведен фрагмент кода, осуществляющий лианеризацию изображения обратным гамма преобразованием:
 ```
@@ -69,7 +67,7 @@ public BufferedImage gammaCorrection(BufferedImage img, double gamma) throws IOE
 
 [/result/gammaCor/result.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/gammaCor/result.jpg)
 
-### Отображение по каналам RGB.
+### 3) Отображение по каналам RGB.
 
 Ниже приведен фрагмент кода, осуществляющий отображение по каналам RGB:
 ```
@@ -103,7 +101,7 @@ public void rgbChannels(BufferedImage img) throws IOException {
 
 [/result/rgbChannels/b.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/rgbChannels/b.jpg)
 
-### Отображение поканальной разницы между исходным изображением и линеаризованным
+### 4) Отображение поканальной разницы между исходным изображением и линеаризованным
 
 Ниже приведен фрагмент кода, осуществляющий отображение поканальной разницы между исходным изображением и линеаризованным:
 ```
