@@ -35,25 +35,10 @@ public void channels(BufferedImage img) throws IOException {
 Результаты работы: 
 
 [/result/channels/r.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/channels/r.jpg)
-<div align="center">
-  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/channels/r.jpg"/>
-  
-  Рисунок 1 – Канал R.
-</div>
 
 [/result/channels/r.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/channels/g.jpg)
-<div align="center">
-  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/channels/g.jpg"/>
-  
-  Рисунок 2 – Канал G.
-</div>
 
 [/result/channels/b.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/channels/b.jpg)
-<div align="center">
-  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/channels/b.jpg"/>
-  
-  Рисунок 3 – Канал B.
-</div>
 
 ### Лианеризация изображения обратным гамма преобразованием.
 
@@ -83,11 +68,6 @@ public BufferedImage gammaCorrection(BufferedImage img, double gamma) throws IOE
 Результат работы: 
 
 [/result/gammaCor/result.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/gammaCor/result.jpg)
-<div align="center">
-  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/gammaCor/result.jpg"/>
-  
-  Рисунок 4 – Лианеризованное изображение.
-</div>
 
 ### Отображение по каналам RGB.
 
@@ -118,25 +98,10 @@ public void rgbChannels(BufferedImage img) throws IOException {
 Результаты работы: 
 
 [/result/rgbChannels/r.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/rgbChannels/r.jpg)
-<div align="center">
-  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/rgbChannels/r.jpg"/>
-  
-  Рисунок 5 – Канал R.
-</div>
 
 [/result/rgbChannels/g.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/rgbChannels/g.jpg)
-<div align="center">
-  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/g.jpg"/>
-  
-  Рисунок 6 – Канал G.
-</div>
 
 [/result/rgbChannels/b.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/rgbChannels/b.jpg)
-<div align="center">
-  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/rgbChannels/b.jpg"/>
-  
-  Рисунок 7 – Канал B.
-</div>
 
 ### Отображение поканальной разницы между исходным изображением и линеаризованным
 
@@ -168,22 +133,7 @@ public void difference(BufferedImage img, BufferedImage gCor) throws IOException
 Результаты работы: 
 
 [/result/difference/r.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/difference/r.jpg)
-<div align="center">
-  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/difference/r.jpg"/>
-  
-  Рисунок 8 – Канал R.
-</div>
 
 [/result/difference/g.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/difference/g.jpg)
-<div align="center">
-  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/difference/g.jpg"/>
-  
-  Рисунок 9 – Канал G.
-</div>
 
 [/result/difference/b.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/difference/b.jpg)
-<div align="center">
-  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/difference/b.jpg"/>
-  
-  Рисунок 10 – Канал B.
-</div>
