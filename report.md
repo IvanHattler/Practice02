@@ -2,10 +2,9 @@
 
 В ходе выполнения рабораторной работы было разработано консольное Java приложение.
 
-Исходное изображение - [img.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice02/src/main/resources/img.jpg)
+Исходное изображение - [img.jpg](https://github.com/IvanHattler/Practice02/blob/master/src/main/resources/img.jpg)
 
-Результаты обработки - [result](https://github.com/m-aks/imageProcessing/tree/main/Practice02/result)
-
+Результаты обработки - [result](https://github.com/IvanHattler/Practice02/tree/master/result)
 
 ### Отображение изображения по каналам RGB
 
@@ -35,23 +34,23 @@ public void channels(BufferedImage img) throws IOException {
 ```
 Результаты работы: 
 
-[/result/channels/r.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/channels/r.jpg)
+[/result/channels/r.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/channels/r.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/channels/r.jpg"/>
+  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/channels/r.jpg"/>
   
   Рисунок 1 – Канал R.
 </div>
 
-[/result/channels/r.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/channels/g.jpg)
+[/result/channels/r.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/channels/g.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/channels/g.jpg"/>
+  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/channels/g.jpg"/>
   
   Рисунок 2 – Канал G.
 </div>
 
-[/result/channels/b.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/channels/b.jpg)
+[/result/channels/b.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/channels/b.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/channels/b.jpg"/>
+  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/channels/b.jpg"/>
   
   Рисунок 3 – Канал B.
 </div>
@@ -83,9 +82,9 @@ public BufferedImage gammaCorrection(BufferedImage img, double gamma) throws IOE
 ```
 Результат работы: 
 
-[/result/gammaCor/result.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/gammaCor/result.jpg)
+[/result/gammaCor/result.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/gammaCor/result.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/gammaCor/result.jpg"/>
+  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/gammaCor/result.jpg"/>
   
   Рисунок 4 – Лианеризованное изображение.
 </div>
@@ -118,23 +117,23 @@ public void rgbChannels(BufferedImage img) throws IOException {
 ```
 Результаты работы: 
 
-[/result/rgbChannels/r.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/rgbChannels/r.jpg)
+[/result/rgbChannels/r.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/rgbChannels/r.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/rgbChannels/r.jpg"/>
+  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/rgbChannels/r.jpg"/>
   
   Рисунок 5 – Канал R.
 </div>
 
-[/result/rgbChannels/g.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/rgbChannels/g.jpg)
+[/result/rgbChannels/g.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/rgbChannels/g.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/rgbChannels/g.jpg"/>
+  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/g.jpg"/>
   
   Рисунок 6 – Канал G.
 </div>
 
-[/result/rgbChannels/b.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/rgbChannels/b.jpg)
+[/result/rgbChannels/b.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/rgbChannels/b.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/rgbChannels/b.jpg"/>
+  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/rgbChannels/b.jpg"/>
   
   Рисунок 7 – Канал B.
 </div>
@@ -168,23 +167,23 @@ private void difference(BufferedImage img, BufferedImage gCor) throws IOExceptio
 ```
 Результаты работы: 
 
-[/result/difference/r.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/difference/r.jpg)
+[/result/difference/r.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/difference/r.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/difference/r.jpg"/>
+  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/difference/r.jpg"/>
   
   Рисунок 8 – Канал R.
 </div>
 
-[/result/difference/g.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/difference/g.jpg)
+[/result/difference/g.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/difference/g.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/difference/g.jpg"/>
+  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/difference/g.jpg"/>
   
   Рисунок 9 – Канал G.
 </div>
 
-[/result/difference/b.jpg](https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/difference/b.jpg)
+[/result/difference/b.jpg](https://github.com/IvanHattler/Practice02/tree/master/result/difference/b.jpg)
 <div align="center">
-  <img src="https://github.com/m-aks/imageProcessing/blob/main/Practice02/result/difference/b.jpg"/>
+  <img src="https://github.com/IvanHattler/Practice02/tree/master/result/difference/b.jpg"/>
   
   Рисунок 10 – Канал B.
 </div>
